@@ -39,7 +39,7 @@
 
   // Таби та дерево файлів
   "workbench.tree.indent": 14,
-  // "workbench.editor.showTabs": "single",
+  "workbench.editor.showTabs": "single",
   "workbench.editor.tabSizing": "fit",
   "workbench.editor.labelFormat": "short",
 
@@ -349,5 +349,5 @@
     },
   ],
   "workbench.preferredDarkColorTheme": "Dracula Theme",
-  "editor.experimentalGpuAcceleration": "on",
+  "window.customTitleBarVisibility": "never",
 }
