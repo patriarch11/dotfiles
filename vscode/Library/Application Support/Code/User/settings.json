@@ -32,9 +32,6 @@
   "workbench.preferredLightColorTheme": "Light 2026",
   // "workbench.iconTheme": "vs-seti",
   "workbench.iconTheme": "material-icon-theme",
-
-  // Панелі
-  "window.customTitleBarVisibility": "never",
   "workbench.activityBar.location": "top", // activity bar сховано
   "workbench.sideBar.location": "right",
   "window.titleBarStyle": "custom",
