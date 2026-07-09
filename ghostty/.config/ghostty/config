@@ -1,0 +1,5 @@
+font-family = "JetBrainsMono Nerd Font"
+font-family = "Noto Sans Symbols 2"
+font-size = 15
+command = /opt/homebrew/bin/tmux new-session -A -s main
+theme = dark:Dark+,light:GitHub Light Default

@@ -1,0 +1,105 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "edit_predictions": {
+    "open_ai_compatible_api": {
+      "prompt_format": "qwen",
+      "model": "qwen/qwen3.5-9b"
+    },
+    "provider": "zed",
+    "mode": "subtle",
+  },
+  "show_edit_predictions": true,
+  "vim": {
+    "toggle_relative_line_numbers": true,
+  },
+  "vim_mode": true,
+  "agent_servers": {
+    "qwen-code": {
+      "type": "registry"
+    },
+    "codex-acp": {
+      "type": "registry",
+    },
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "icon_theme": "Material Icon Theme",
+  "disable_ai": false,
+  "outline_panel": {
+    "dock": "right",
+  },
+  "git_panel": {
+    "dock": "right",
+  },
+  "project_panel": {
+    "dock": "right",
+  },
+  "collaboration_panel": {
+    "button": false,
+  },
+  "notification_panel": {
+    "button": false,
+  },
+  "terminal": {
+    "shell": "system",
+    "font_size": 14.0,
+    "font_family": "MesloLGS Nerd Font",
+  },
+  "base_keymap": "VSCode",
+  "minimap": {
+    "thumb": "always",
+    "show": "never",
+  },
+  "scrollbar": {
+    "axes": {
+      "horizontal": false,
+      "vertical": false,
+    },
+  },
+  "cursor_blink": false,
+  "buffer_font_family": "Fira Code",
+  "show_whitespaces": "all",
+  "ui_font_size": 16,
+  "buffer_font_size": 16.0,
+  "theme": {
+    "mode": "system",
+    "light": "Monokai-og",
+    "dark": "Monokai-og",
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true,
+    "show_diagnostics": "all",
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "agent_review": false,
+    "code_actions": false,
+    "quick_actions": false,
+    "selections_menu": false,
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "languages": {
+    "Go": {
+      "language_servers": ["gopls"],
+      "colorize_brackets": true,
+    },
+    "Python": {
+      "language_servers": ["pyright", "ruff"],
+    },
+  },
+  "inlay_hints": {
+    "show_value_hints": false,
+  },
+}

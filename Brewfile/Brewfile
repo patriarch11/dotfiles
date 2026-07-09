@@ -1,0 +1,160 @@
+tap "apple/apple", "http://github.com/apple/homebrew-apple"
+tap "asmvik/formulae"
+tap "cormacrelf/tap"
+tap "nikitabobko/tap"
+tap "shivammathur/php"
+# Run your GitHub Actions locally
+brew "act"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
+# Automatic configure script builder
+brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
+# New way of working with Protocol Buffers
+brew "buf"
+# Cross-platform make
+brew "cmake"
+# Generic library support script
+brew "libtool"
+# Dependency Manager for PHP
+brew "composer"
+# Load/unload environment variables based on $PWD
+brew "direnv"
+# Select default apps for documents and URL schemes on macOS
+brew "duti"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# Git extension for versioning large files
+brew "git-lfs"
+# Go Language's command-line interface for database migrations
+brew "goose"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
+# Next generation open source RPC library and framework
+brew "grpc"
+# Interactive web UI for gRPC, along the lines of postman
+brew "grpcui"
+# Handy way to save and run project-specific commands
+brew "just"
+# Lazier way to manage everything docker
+brew "lazydocker"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Clone of ls with colorful output, file type icons, and more
+brew "lsd"
+# Sudoless performance monitoring for Apple Silicon processors
+brew "macmon"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Incremental parsing library
+brew "tree-sitter"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Retrieves currently playing media, and simulates media actions
+brew "nowplaying-cli"
+# QR Code generation
+brew "qrencode"
+# Ruby version manager
+brew "rbenv"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
+# Terminal multiplexer
+brew "tmux"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "nikitabobko/tap/aerospace"
+# Enable Windows-like alt-tab
+cask "alt-tab"
+# Terminal-based AI coding assistant
+cask "claude-code"
+cask "font-fira-code"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-meslo-lg-nerd-font"
+cask "font-noto-sans-symbols-2"
+cask "font-sf-mono-nerd-font-ligaturized"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Kubernetes IDE
+cask "lens"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# Replacement for Docker Desktop
+cask "orbstack"
+# Collaboration platform for API development
+cask "postman"
+# Open-source code editor
+cask "visual-studio-code"
+# Multiplayer code editor
+cask "zed"
+vscode "alefragnani.project-manager"
+vscode "anthropic.claude-code"
+vscode "bmewburn.vscode-intelephense-client"
+vscode "bradlc.vscode-tailwindcss"
+vscode "chadalen.vscode-jetbrains-icon-theme"
+vscode "chaitanyashahare.lazygit"
+vscode "charliermarsh.ruff"
+vscode "continue.continue"
+vscode "dbaeumer.vscode-eslint"
+vscode "dbcode.dbcode"
+vscode "esbenp.prettier-vscode"
+vscode "golang.go"
+vscode "ms-python.autopep8"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-vscode.cpptools"
+vscode "nefrob.vscode-just-syntax"
+vscode "oleksandrhavrysh.vscode-intellij-theme"
+vscode "openai.chatgpt"
+vscode "pbkit.vscode-pbkit"
+vscode "pomdtr.excalidraw-editor"
+vscode "redhat.vscode-yaml"
+vscode "rust-lang.rust-analyzer"
+vscode "slint.slint"
+vscode "st-pham.php-refactor-tool"
+vscode "subframe7536.custom-ui-style"
+vscode "svelte.svelte-vscode"
+vscode "tamasfe.even-better-toml"
+vscode "tooltitudeteam.tooltitude-pb"
+vscode "vscodevim.vim"
+vscode "xdebug.php-debug"
+go "github.com/air-verse/air"
+go "github.com/ehabterra/apispec/cmd/apispec"
+go "github.com/go-delve/delve/cmd/dlv"
+go "mvdan.cc/gofumpt"
+go "github.com/golangci/golangci-lint/v2/cmd/golangci-lint"
+go "github.com/haya14busa/goplay/cmd/goplay"
+go "golang.org/x/tools/gopls"
+go "github.com/cweill/gotests/gotests"
+go "github.com/josharian/impl"
+go "github.com/pseudomuto/protoc-gen-doc/cmd/protoc-gen-doc"
+go "google.golang.org/protobuf/cmd/protoc-gen-go"
+go "google.golang.org/grpc/cmd/protoc-gen-go-grpc"
+cargo "just-lsp"
+cargo "sqlx-cli"
+cargo "tree-sitter-cli"
+npm "@continuedev/cli"
+npm "@openai/codex"
+npm "@wordpress/env"

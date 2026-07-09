@@ -1,0 +1,28 @@
+format = "$directory$git_branch$git_status$python\n$character"
+
+[directory]
+truncation_length = 1
+truncate_to_repo = false
+style = "blue bold"
+
+[git_branch]
+#format = " on [$branch](bold white)"
+style = "magenta bold"
+
+[git_status]
+format = '([ $all_status$ahead_behind](white))'
+modified = "~"
+untracked = "?"
+staged = "+"
+ahead = "⇡"
+behind = "⇣"
+
+[python]
+format = ' [(\($virtualenv\))](dimmed white)'
+detect_files = []
+detect_extensions = []
+detect_folders = ["venv", ".venv"]
+
+[character]
+success_symbol = "[➜](green)"
+error_symbol = "[➜](red)"

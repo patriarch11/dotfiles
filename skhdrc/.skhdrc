@@ -1,0 +1,49 @@
+# Custom keyboard shortcuts to spawn apps
+#
+# Docs can be found here:
+# https://github.com/koekeishiya/skhd
+
+# open vscode:
+alt - p : open -a 'Visual Studio Code'
+
+# open vscode:
+alt - f : open -a 'Finder'
+
+# open browser:
+alt + shift - b : open -a 'Google Chrome'
+
+# open telegram:
+alt - a : open -a 'Telegram'
+
+# open terminal:
+alt - return : open -a 'iTerm'
+
+
+# open obsidian:
+alt - n : open -a 'Obsidian'
+
+# open zoom
+alt - z : open -a 'zoom.us.app'
+
+# open Lens
+alt + shift - l : open -a 'Lens.app'
+
+# open Notion
+alt + shift - n : open -a 'Notion'
+
+# open Claude
+alt + shift - c : open -a 'Claude'
+
+# open DeepL
+alt - t : open -a 'DeepL'
+
+# open DataGrip
+alt - d : open -a 'DataGrip'
+
+# open DBeaver
+alt + shift - d : open -a 'DBeaver'
+
+alt - m : open -a 'MongoDB Compass' 
+
+# Hyper has its own hotkey with `ctrl + ;` in `hyper.js`,
+# because this app does not allow `;` as a hotkey for some reason.

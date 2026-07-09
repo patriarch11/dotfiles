@@ -1,0 +1,356 @@
+{
+  /*** EDITOR ***/
+  // Шрифти
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.fontWeight": "500", // трохи жирніше
+  "editor.letterSpacing": 0.3,
+  "workbench.fontAliasing": "antialiased", // або "auto"
+  "editor.fontVariations": true,
+  "editor.lineNumbers": "relative",
+
+  // Візуал
+  "editor.renderLineHighlight": "none", // без підсвітки активного рядка
+  // "editor.cursorBlinking": "solid", // курсор без блимання
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.experimentalWhitespaceRendering": "font",
+  "editor.lightbulb.enabled": "on", // підказки quick fix
+  "editor.dragAndDrop": false, // заборона drag-n-drop тексту
+
+  // Скролбар та мінімапа
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.minimap.autohide": "mouseover",
+  "editor.minimap.enabled": true,
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+
+  // Форматування
+  "editor.formatOnSave": true, // глобально для всіх мов
+  "editor.linkedEditing": true,
+  "workbench.preferredLightColorTheme": "Light 2026",
+  // "workbench.iconTheme": "vs-seti",
+  "workbench.iconTheme": "material-icon-theme",
+
+  // Панелі
+  "window.customTitleBarVisibility": "never",
+  "workbench.activityBar.location": "top", // activity bar сховано
+  "workbench.sideBar.location": "right",
+  "window.titleBarStyle": "custom",
+  "workbench.layoutControl.enabled": true,
+
+  // Таби та дерево файлів
+  "workbench.tree.indent": 14,
+  // "workbench.editor.showTabs": "single",
+  "workbench.editor.tabSizing": "fit",
+  "workbench.editor.labelFormat": "short",
+
+  // Кастомізація кольорів
+  // "workbench.colorCustomizations": {
+  //   "activityBarBadge.background": "#f84339", // червоний бейдж
+  // },
+  // "problems.decorations.enabled": false, // без підкреслень у дереві файлів
+
+  /*** WINDOW ***/
+  // "window.titleBarStyle": "native", // нативний macOS title bar
+  "window.nativeTabs": true, // нативні таби macOS
+  "window.autoDetectColorScheme": true, // light/dark за системою
+  // "window.density.editorTabHeight": "compact", // компактні таби
+  "window.dialogStyle": "custom",
+  "window.newWindowProfile": "Default",
+  "window.commandCenter": false,
+  "window.title": "${rootName}",
+
+  /*** TERMINAL ***/
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font", // для p10k/starship іконок
+  "terminal.integrated.fontSize": 13,
+
+  /*** DEBUGGER ***/
+  "debug.inlineValues": "on", // значення змінних прямо в коді
+
+  /*** VIM ***/
+  "vim.statusBarColorControl": false,
+  "vim.useSystemClipboard": true, // yank/paste через системний буфер
+  "vim.highlightedyank.enable": true, // підсвітка yanked тексту
+  "vim.surround": true,
+
+  // ]b / [b — перемикання табів
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["]", "b"],
+      "commands": ["workbench.action.nextEditor"],
+    },
+    {
+      "before": ["[", "b"],
+      "commands": ["workbench.action.previousEditor"],
+    },
+  ],
+
+  // jj — вихід з insert mode
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"],
+    },
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"],
+    },
+  ],
+
+  /*** GIT ***/
+  "gitlens.statusBar.enabled": false, // без blame у статус барі
+
+  /*** LANGUAGES ***/
+  // JavaScript / TypeScript — Prettier + ESLint
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+  ],
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascriptreact]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  // Python — autopep8 + ruff для imports та autofixes
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": "always",
+      "source.fixAll.ruff": "always",
+    },
+  },
+  "python.terminal.activateEnvironment": false,
+
+  // Go — gofumpt + auto-organize imports
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+    },
+  },
+  "go.lintTool": "golangci-lint-v2",
+  "go.lintOnSave": "package",
+  "go.toolsManagement.autoUpdate": true,
+  "gopls": {
+    "formatting.gofumpt": true, // строгіший gofmt
+  },
+
+  // Rust
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+  },
+
+  // C/C++ — Google style, indent 4
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, AllowShortFunctionsOnASingleLine: false }",
+
+  // PHP — phpsab formatter
+  "[php]": {
+    "editor.tabSize": 4,
+    // "editor.defaultFormatter": "valeryanm.vscode-phpsab",
+  },
+
+  // HTML / CSS — Prettier + Tailwind
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html", // tailwind autocomplete в plaintext
+  },
+
+  // JSON
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+
+  /*** EXTENSIONS ***/
+  "extensions.ignoreRecommendations": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1, // окремий процес для Vim (менше лагів)
+  },
+  "chat.agentsControl.enabled": "hidden", // без Copilot agents
+  "claudeCode.preferredLocation": "sidebar",
+  "yaml.schemas": {
+    "file:///Users/pariarch/.vscode/extensions/continue.continue-1.2.19-darwin-arm64/config-yaml-schema.json": [
+      ".continue/**/*.yaml",
+    ],
+    "file:///Users/pariarch/.vscode/extensions/continue.continue-1.2.21-darwin-arm64/config-yaml-schema.json": [
+      ".continue/**/*.yaml",
+    ],
+    "file:///Users/pariarch/.vscode/extensions/continue.continue-1.2.22-darwin-arm64/config-yaml-schema.json": [
+      ".continue/**/*.yaml",
+    ],
+  },
+  "svelte.enable-ts-plugin": true,
+
+  /* кастомні стилі, убираєм тайтл бар і робим трохи красивіше все */
+
+  "custom-ui-style.electron": {
+    // "titleBarStyle": "hiddenInset", // вимкнути візібіліті кастомного тайтлбара
+  },
+  "custom-ui-style.stylesheet": {
+    ".title.breadcrumbs.show-file-icons": {
+      "padding-left": "80px !important",
+    },
+    ".monaco-workbench": {
+      "--activitybar-width": "78px",
+      "--titlebar-height": "37px",
+
+      // Titlebar
+      ".part.sidebar.left .composite.title": {
+        "&, .title-actions, .global-actions, .monaco-toolbar": {
+          "height": "var(--titlebar-height)",
+        },
+
+        ".title-label": {
+          "line-height": "var(--titlebar-height)",
+        },
+      },
+
+      // Tabs
+      ".title.tabs": {
+        "--editor-group-tab-height": "var(--titlebar-height) !important",
+      },
+
+      // Wide activity bar
+      ".split-view-view:has(> .part.activitybar.left)": {
+        "&, .part.activitybar.left, .content": {
+          "min-width": "var(--activitybar-width)",
+        },
+
+        // Make the split-view after the wide activity bar smaller.
+        // Also handle the situation where the sidebar is hidden,
+        // in which case the editor itself needs to shrink / auto-size.
+        "& + .split-view-view.visible, & + .split-view-view:not(.visible) + .split-view-view.visible": {
+          "--offset": "calc(var(--activitybar-width) - 48px)",
+          "margin-left": "var(--offset)",
+
+          "> *:first-child": {
+            "width": "auto",
+            "margin-right": "var(--offset)",
+
+            // Auto-size the editor when the sidebar is hidden.
+            ".content": {
+              "&, .split-view-view": {
+                "&, .monaco-editor": {
+                  "&, .overflow-guard, .overlayWidgets": {
+                    "&, .monaco-scrollable-element, .sticky-widget": {
+                      "width": "unset !important",
+                      "left": "0",
+                      "right": "0",
+                    },
+
+                    ".sticky-widget": {
+                      "right": "14px !important",
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+
+      ".monaco-sash.vertical.minimum": {
+        // TODO: Improve collapsing of the sidebar.
+        "left": "calc(var(--activitybar-width) - var(--vscode-sash-size) / 2) !important",
+      },
+
+      ".part.activitybar.left": {
+        ".monaco-action-bar": {
+          ".action-label": {
+            "width": "var(--activitybar-width)",
+          },
+        },
+      },
+
+      "&:not(.fullscreen)": {
+        // Make room for traffic lights.
+        ".part.activitybar.left > .content": {
+          "padding-top": "var(--titlebar-height)",
+        },
+
+        // Move editor title when side-bar is hidden, when side-bar is on the
+        // right or when activity-bar is hidden and side-bar is not on the right
+        "&:has(.sidebar.right)": {
+          ".monaco-split-view2.horizontal .split-view-view:not(.visible) + .split-view-view.visible .editor .title .tabs-and-actions-container": {
+            "padding-left": "var(--activitybar-width)",
+          },
+
+          ".auxiliarybar.left .composite.title": {
+            "padding-left": "var(--activitybar-width)",
+          },
+        },
+      },
+
+      ".statusbar": {
+        // Don't indent the statusbar items.
+        "> .items-container > .statusbar-item.left.first-visible-item": {
+          "padding-left": "0",
+        },
+      },
+    },
+
+    // Make line numbers a bit smaller.
+    ".editor .margin-view-overlays .line-numbers": {
+      "font-size": "85%",
+    },
+
+    // Show search inputs and results in monospaced font.
+    ".search-widget textarea, .find-widget textarea, .search-view .results .match": {
+      "font-family": "var(--cus-monospace-font) !important",
+    },
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode",
+  },
+  "chat.disableAIFeatures": true,
+  "workbench.browser.searchEngine": "duckduckgo",
+  "dbcode.connections": [
+    {
+      "connectionId": "KnwUUL_AdouaTTvvlMD0J",
+      "name": "platform local",
+      "driver": "postgres",
+      "connectionType": "host",
+      "host": "localhost",
+      "port": 5432,
+      "ssl": false,
+      "authMethod": "password",
+      "username": "postgres",
+      "savePassword": "secretStorage",
+      "database": "platform",
+      "readOnly": false,
+      "postConnectionSqlType": "inline",
+      "connectionTimeout": 30,
+      "pinnedConnectionTimeout": "0",
+      "introspection": {
+        "progressive": false,
+      },
+    },
+  ],
+  "workbench.preferredDarkColorTheme": "Dracula Theme",
+  "editor.experimentalGpuAcceleration": "on",
+}

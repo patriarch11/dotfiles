@@ -1,0 +1,11 @@
+alias ls="lsd"
+alias ll="lsd -l"
+alias la="lsd -la"
+alias c="clear"
+alias ff="fastfetch"
+alias v="nvim"
+alias take='(){mkdir -p "$1" && cd "$1"}'
+alias cpb='(){pbcopy < "$1"}'
+alias cat="bat"
+alias lg="lazygit"
+alias ldr="lazydocker"
