@@ -44,8 +44,7 @@
   },
   {
     "key": "cmd+d",
-    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
-    "when": "!activeEditorGroupEmpty",
+    "command": "workbench.action.showAllEditors",
   },
   {
     "key": "ctrl+tab",
