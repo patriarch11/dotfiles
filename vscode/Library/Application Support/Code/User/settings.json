@@ -1,7 +1,7 @@
 {
   /*** EDITOR ***/
   // Шрифти
-  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontFamily": "'JetBrains Mono'",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "editor.fontWeight": "500", // трохи жирніше
@@ -61,7 +61,7 @@
 
   /*** TERMINAL ***/
   "terminal.integrated.gpuAcceleration": "on",
-  "terminal.integrated.fontFamily": "MesloLGS Nerd Font", // для p10k/starship іконок
+  "terminal.integrated.fontFamily": "Monaco, 'FantasqueSansM Nerd Font'", // для p10k/starship іконок
   "terminal.integrated.fontSize": 13,
 
   /*** DEBUGGER ***/

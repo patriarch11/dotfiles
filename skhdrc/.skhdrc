@@ -10,7 +10,7 @@ alt - p : open -a 'Visual Studio Code'
 alt - f : open -a 'Finder'
 
 # open browser:
-alt + shift - b : open -a 'Google Chrome'
+alt  - b : open -a 'Safari'
 
 # open telegram:
 alt - a : open -a 'Telegram'
