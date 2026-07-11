@@ -3,7 +3,6 @@ eval "$(fzf --zsh)"
 
 . "$HOME/.local/bin/env"
 . "$HOME/.aliases.sh"
-. "$HOME/.aliases.adheart.sh"
 . "$HOME/.utils.sh"
 
 . $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -350,4 +350,5 @@
   ],
   "workbench.preferredDarkColorTheme": "Dracula Theme",
   "window.customTitleBarVisibility": "never",
+  "editor.experimentalGpuAcceleration": "on",
 }
